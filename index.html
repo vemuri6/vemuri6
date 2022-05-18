@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/29d8f66910.js" crossorigin="anonymous"></script>
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/002/837/838/original/artificial-intelligence-ai-icon-vector.jpg">
+    <title>Coders Club</title>
+    <style>
+        .table,
+        th,
+        td {
+            border: 2px black solid
+        }
+
+        .navbar {
+            position: fixed;
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 5px;
+            z-index: 1;
+        }
+
+        #leftbox {
+            float: left;
+            width: 38%;
+            height: auto;
+            color: black;
+
+        }
+
+        #middlebox {
+            float: left;
+            width: 32%;
+            height: auto;
+            color: black;
+        }
+
+        #rightbox {
+
+            float: right;
+            width: 30%;
+            height: auto;
+            color: black;
+        }
+
+        marquee {
+            position: relative;
+            top: 10px;
+        }
+
+        .offcanvas-top {
+            height: 11vh;
+
+        }
+
+        .offcanvas-top ul li a {
+            text-decoration: none;
+        }
+
+
+        #rightbox ul a {
+            text-decoration: none;
+
+        }
+    </style>
+
+</head>
+
+<body >
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-secondary">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+                <img src="./png/ai (2).png" alt="logo" height="45px">
+                <button type="submit" class="btn text-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                    aria-controls="offcanvasTop">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </button>
+                <span class="text-warning"
+                    style="font-family: serif; font-weight: 600; font-size: xx-large; position: relative; top: 5px;">
+                    Coders <span class="text-dark">Club</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><strong>Admin</strong></a>
+                    </li>
+                    <li class="nav-item dropdown dropstart" style="cursor: pointer; z-index: 99;">
+                        <i class="fa-solid fa-user-circle fa-3x text-light" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        </i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="profile.html"><i class="fa-regular fa-address-card mx-1"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="about.html"><i class="fa fa-circle-info mx-1"></i>About</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="text-center text-info"><a class="dropdown-item text-primary fw-bold" href="login.html"
+                                    ><i class="fa-solid fa-user"></i>
+                                    Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Sub-navbar  -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-body">
+            <ul class="list"
+                style="list-style: none; display: flex; justify-content: space-between; overflow-y: hidden;  position: relative; top:8px; font-size: 15px; font-weight: 700;">
+                <li class="list-item">
+                    <a href="#Machine-Learning"><i class="fa-solid fa-robot mx-2"></i>Machine Learning</a>
+                </li>
+                <li class="list-item">
+                    <a href="#index"><i class="fa fa-inbox mx-2"></i>Index</a>
+                </li>
+                <li class="list-item">
+                    <a href="#admin_info"><i class="fa-solid fa-circle-info mx-1 margin-top:50px"></i>Admin_Info</a>
+                </li>
+                <li class="list-item">
+                    <a href="#about"><i class="fa-solid fa-user mx-2"></i> AboutUs</a>
+                </li>
+                <li class="list-item">
+                    <a href="#more"><i class="fa-solid fa-angles-right mx-2"></i>More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  Sub-navbar -->
+    <div class="container" data-bs-target="#offcanvasTop">
+        <br><br><br>
+        <marquee behavior="" direction=""><strong><span
+                    style="color: rgba(46, 121, 179, 0.755); margin-top: 50%;text-underline-offset: 30%;">WELCOME TO
+                    CODERS
+                    CLUB.....</span></strong><img
+                src="https://www.creativehatti.com/wp-content/uploads/2022/04/Hr-manager-is-dragging-files-on-cart-7-small.jpg"
+                height="50px" width="50px">
+        </marquee>
+        <hr>
+        <div class="row" style="font-family:cursive">
+            <strong style="background-color: rgb(115, 193, 203);">"Hello people we are here to learn
+                something new, Admin welcomes you to this
+                huge platform where we can have fun with coding lets start our fun now.</strong>
+            &nbsp;&nbsp;<br><br>&nbsp;
+        </div>
+        <p class="row" id="Machine-Learning">
+            <strong>Why do we need machine learning?</strong><br>
+            For instance, we have a set of images of cats and dogs. What we want to do is classify them into a group of
+            cats
+            and dogs. To do that we need to find out different animal features, such as:
+        <ul class="row">
+            <li> How many eyes does each animal have?</li>
+            <li>What is the height of each animal?</li>
+            <li>What is the weight of each animal?</li>
+            <li>What does each animal generally eat?</li>
+            <li> What is the eye color of each animal?</li>
+        </ul>
+        </p>
+
+        <div class="container">
+            <img src="https://www.blog.adva.com/-/media/blog/header-images/2019/190605-artificial-intelligence-i-think-therefore-i-am.jpg?rev=faf21b48ca4b44af94a900f728d0d2df&hash=8C9977A574C6D6597EEFD0AC0BEF82DD"
+                alt="image" height="450px" width="800px" style="opacity:100%;margin-left: 200px; max-width: 100%;">
+        </div>
+
+        <div class="row" style="background-color: rgb(248, 248, 242);">
+            <script>
+                document.write("What Is Artificial Intelligence (AI)")
+                document.write(" Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions. The term may also be applied to any machine that exhibits traits associated with a human mind such as learning and problem-solving")
+                document.write("The ideal characteristic of artificial intelligence is its ability to rationalize and take actions that have the best chance of achieving a specific goal. A subset of artificial intelligence is machine learning, which refers to the concept that computer programs can automatically learn from and adapt to new data without being assisted by humans. Deep learning techniques enable this automatic learning through the absorption of huge amounts of unstructured data such as text, images, or video.")
+            </script>
+        </div>
+        <hr>
+
+        <div class="row"> v   
+
+            <h1>Here we can see the Machine Learning Algorithms Tree below:</h1>
+            <img src="https://miro.medium.com/max/1400/1*Lejtm0oGlOC5U0-J0JmGhg.png" alt="img" width="90%">&nbsp;<br>
+
+            <p>Machine learning (ML) is rapidly changing the world, from diverse types of applications and research
+                pursued
+                in
+                industry and academia. Machine learning is affecting every part of our daily lives. From voice
+                assistants
+                using NLP
+                and machine learning to make appointments, check our calendar, and play music, to programmatic
+                advertisements
+                — that are so accurate that they can predict what we will need before we even think of it.More often
+                than
+                not,
+                the complexity of the scientific field of machine learning can be overwhelming, making keeping up
+                with “what
+                is important”
+                a very challenging task. However, to make sure that we provide a learning path to those who seek to
+                learn
+                machine learning,
+                but are new to these concepts. In this article we look at the most critical basic algorithms that
+                hopefully
+                make your
+                machine learning journey less .</p>
+
+        </div>
+        <div class="row">
+            <center>
+                <iframe src="https://www.youtube.com/embed/yN7ypxC7838" frameborder="50%" height="450px"
+                    width="65%"></iframe>&nbsp;
+
+            </center>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <ul id="index">
+                    <strong>INDEX</strong>
+                    <li>Introduction to Machine Learning.</li>
+                    <li>Major Machine Learning Algorithms.</li>
+                    <li>Supervised vs. Unsupervised Learning.</li>
+                    <li>Linear Regression.</li>
+                    <li>Multivariable Linear Regression.</li>
+                    <li>Polynomial Regression.</li>
+                    <li>Exponential Regression.</li>
+                    <li>Sinusoidal Regression.</li>
+                    <li>Logarithmic Regression.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <h1>what is machine learning?</h1>
+                <img src="https://miro.medium.com/max/875/1*Uosf1GeTSRd3LE1fFJRhbw.jpeg" alt="image" height="80%"
+                    style="margin-left: 40px;" width="750px">&nbsp;&nbsp;&nbsp;
+            </div>
+            <hr>
+            <p>
+                A computer program is said to learn from experience E with respect to some class of tasks T and
+                performance
+                measure P, if its performance at tasks in T, as measured by P, improves with experience E. ~ Tom M.
+                Mitchell
+                [1]
+
+                Machine learning behaves similarly to the growth of a child. As a child grows, her experience E in
+                performing task T increases, which results in higher performance measure (P).
+
+                For instance, we give a “shape sorting block” toy to a child. (Now we all know that in this toy, we have
+                different shapes and shape holes). In this case, our task T is to find an appropriate shape
+
+                hole for a shape. Afterward, the child observes the shape and tries to fit it in a shaped hole. Let us
+                say
+                that this toy has three shapes: a circle, a triangle, and a square. In her first attempt at finding
+
+                a shaped hole, her performance measure(P) is 1/3, which means that the child found 1 out of 3 correct
+                shape
+                holes.
+
+                Second, the child tries it another time and notices that she is a little experienced in this task.
+                Considering the experience gained (E), the child tries this task another time, and when
+
+                measuring the performance(P), it turns out to be 2/3. After repeating this task (T) 100 times, the baby
+                now
+                figured out which shape goes into which shape hole.
+
+                So her experience (E) increased, her performance(P) also increased, and then we notice that as the
+                number of
+                attempts at this toy increases. The performance also increases, which results in higher accuracy.
+
+                Such execution is similar to machine learning. What a machine does is, it takes a task (T), executes it,
+                and
+                measures its performance (P). Now a machine has a large number of data, so as it processes that
+
+                data, its experience (E) increases over time, resulting in a higher performance measure (P). So after
+                going
+                through all the data, our machine learning model’s accuracy increases, which means that the predictions
+                made
+                by our model will be very accurate.
+
+                Now, we have to make such a set of rules for every data point. Furthermore, we place a decision tree of
+                if,
+                else if, else statements and check whether it falls into one of the categories.
+
+                Let us assume that the result of this experiment was not fruitful as it misclassified many of the
+                animals,
+                which gives us an excellent opportunity to use machine learning.
+
+                What machine learning does is process the data with different kinds of algorithms and tells us which
+                feature
+                is more important to determine whether it is a cat or a dog. So instead of applying many sets of rules,
+                we
+                can simplify it based on two or three features, and as a result, it gives us a higher accuracy. The
+                previous
+                method was not generalized enough to make predictions.
+            </p>
+        </div>
+        <div class="row">
+            <ul>
+                <strong>Machine learning models helps us in many tasks, such as:</strong>
+                <li>Object Recognition</li>
+                <li>Summarization</li>
+                <li>Prediction</li>
+                <li>Classification</li>
+                <li>Clustering</li>
+                <li>Recommender systems</li>
+                <li>And others</li>
+            </ul>
+            <hr>
+            <div style="min-height:auto;">
+                <div class="row" id="admin_info">
+                    <div class="col-md-5">
+                        <strong><u>Admin Info</u></strong>
+
+                        <table style="margin-bottom: 20px;">
+                            <tr>
+                                <th><strong>ADMIN MEMBERS</strong></th><br>
+                                <th><strong>MEMBERS AGE</strong> </th>
+                                <th><strong>MEMBERS QUALIFICATION</strong> </th>
+                                <th><strong>MEMBERS GMAIL</strong> </th>
+
+                            </tr>
+                            <tr>
+
+                                <td>RAJESH</td>
+                                <td>22</td>
+                                <td>B.sc(ele)</td>
+                                <td>rajesh123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>ashok</td>
+                                <td>22</td>
+                                <td>B.C.A</td>
+                                <td>ashok123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>purushottham</td>
+                                <td>21</td>
+                                <td>B.com</td>
+                                <td>kpsr123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>manoj</td>
+                                <td>23</td>
+                                <td>B.Tech</td>
+                                <td>manoj123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>appu</td>
+                                <td>23</td>
+                                <td>B.Tech</td>
+                                <td>appu123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>ravi</td>
+                                <td>23</td>
+                                <td>B.com</td>
+                                <td>ravi123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>mani</td>
+                                <td>24</td>
+                                <td>B.sc</td>
+                                <td>mani123@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Ramesh</td>
+                                <td>23</td>
+                                <td>B.Tech</td>
+                                <td>Ramesh123@gmail.com</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col-md-5" style="height:auto;">
+                        <img src="./png/indexg.png" alt="img"
+                            style="height: 100%;width: 45%;margin-left: 5cm;margin-bottom: 0%;margin-top: -20px;">
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>&nbsp;
+        <hr>
+        <div class="container">
+            <div class="row" id="about">
+                <h2>About Us</h2>
+                <p>There is more about us which this page cannot full fill the whole thing its better to go to more
+                    optin it
+                    takes u below then click on any social medio icon to know about us, have a good day</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            What is a machine learning model?
+            A machine learning model is a question/answering system that takes care of processing machine-learning
+            related
+            tasks. Think of it as an algorithm system that represents data when solving problems. The methods we will
+            tackle
+            below are beneficial for industry-related purposes to tackle business problems.
+
+            For instance, let us imagine that we are working on Google Adwords’ ML system, and our task is to
+            implementing
+            an ML algorithm to convey a particular demographic or area using data. Such a task aims to go from using
+            data to
+            gather valuable insights to improve business outcomes. <>&nbsp;<br>
+
+                <strong> Major Machine Learning Algorithms:</strong>
+                <ol class="row">
+
+                    <li>Regression (Prediction)</li>
+                    We use regression algorithms for predicting continuous values.
+
+                    Regression algorithms:
+
+                    Linear Regression
+                    Polynomial Regression
+                    Exponential Regression
+                    Logistic Regression
+                    Logarithmic Regression
+
+
+                    <li>Classification</li>
+                    We use classification algorithms for predicting a set of items’ class or category.
+
+                    Classification algorithms:
+
+                    K-Nearest Neighbors
+                    Decision Trees
+                    Random Forest
+                    Support Vector Machine
+                    Naive Bayes
+
+                    <li> Clustering</li>
+                    We use clustering algorithms for summarization or to structure data.
+
+                    Clustering algorithms:
+
+                    K-means
+                    DBSCAN
+                    Mean Shift
+                    Hierarchical
+                    <li> Association</li>
+                    We use association algorithms for associating co-occurring items or events.
+
+                    Association algorithms:
+
+                    Apriori
+                    <li> Anomaly Detection</li>
+                    We use anomaly detection for discovering abnormal activities and unusual cases like fraud detection.
+
+                    <li> Sequence Pattern Mining</li>
+                    We use sequential pattern mining for predicting the next data events between data examples in a
+                    sequence.
+
+                    <li> Dimensionality Reduction</li>
+                    We use dimensionality reduction for reducing the size of data to extract only useful features from a
+                    dataset.
+
+                    <li> Recommendation Systems</li>
+                    We use recommenders algorithms to build recommendation engines.
+                </ol>
+
+                <div class="row">
+                    Examples:
+
+                    Netflix recommendation system.
+                    A book recommendation system.
+                    A product recommendation system on Amazon.
+                    Nowadays, we hear many buzz words like artificial intelligence, machine learning, deep learning, and
+                    others.
+
+                    What are the fundamental differences between Artificial Intelligence, Machine Learning, and Deep
+                    Learning?
+                    📚 Check out our editorial recommendations on the best machine learning books. 📚 &nbsp;&nbsp;<br>
+                    <br>
+
+                    <strong> Artificial Intelligence (AI):</strong>
+                    Artificial intelligence (AI), as defined by Professor Andrew Moore, is the science and engineering
+                    of
+                    making
+                    computers behave in ways that, until recently, we thought required human intelligence [4].
+
+                    These include:
+                    <ul>
+                        <li> Computer Vision</li>
+                        <li> Language Processing</li>
+                        <li> Creativity</li>
+                        <li> Summarization</li>
+                    </ul><br>
+                    <strong> Machine Learning (ML):</strong>
+                    As defined by Professor Tom Mitchell, machine learning refers to a scientific branch of AI, which
+                    focuses on the
+                    study of computer algorithms that allow computer programs to automatically improve through
+                    experience
+                    [3]. <br>
+
+                    <strong> These include:</strong>
+                    <ul>
+                        <li> Classification</li>
+                        <li> Neural Network</li>
+                        <li> Clustering</li>
+                    </ul>
+                    <strong> Deep Learning:</strong>
+                    Deep learning is a subset of machine learning in which layered neural networks, combined with high
+                    computing
+                    power and large datasets, can create powerful machine learning models. [3]
+                </div>
+
+
+        </div>
+    </div>
+    </div>
+
+    <footer class="container-fluid" style="background-color: #6c757d;height: 290px; margin-bottom:20px;">&nbsp;
+        <fieldset style="border: solid rgb(0, 0, 0) 2px;margin: 5px;border-radius: 10px;">
+            <div class="container" id="more">
+                <div id="leftbox">
+                    <ul><strong><u>Content We Provide</u></strong>
+                        &nbsp;
+                        <li>Artificial Intelligence</li>
+                        <li>Machine Learning</li>
+                        <li>Deep Learning</li>
+                        <li>Robotics</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div id="middlebox">
+                    <ul><strong><u>More</u></strong>
+                        <li>Career Guiedence</li>
+                        <li>Freindly Lecturers</li>
+                        <li>A/C Cabins</li>
+                        <li>Labs</li>
+                        <li>Job Placements</li>
+                    </ul>
+                </div>
+                <div id="rightbox">
+                    <ul>
+                        <strong><u>Related Sites</u></strong>
+                        <a style="color:black;" href="https://www.geeksforgeeks.org/">
+                            <li>Geeks For Geeks</li>
+                        </a>
+                        <a style="color:black;" href="https://www.w3school.org/">
+                            <li> W3School</li>
+                        </a>
+                        <a style="color:black;" href="https://www.javatpoint.com/">
+                            <li>Java Point</li>
+                        </a>
+                        <a style="color:black;" href="https://www.hackerrank.com/">
+                            <li>Hacker Rank</li>
+                        </a>
+                        <a style="color:black;" href="https://www.codechef.com/">
+                            <li>Coder Chef</li>
+                        </a>
+
+                    </ul>
+
+                </div>
+                <div>
+                    Visit Us On: &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com"><i
+                            style="width: 25px;height: 25px;color: rgb(30, 42, 53); margin-left: 11cm;"
+                            class="fa-brands fa-facebook"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com"><i style="width: 25px;height: 25px;color: rgb(30, 42, 53);  "
+                            class="fa-brands fa-instagram-square"></i></a>&nbsp;&nbsp;
+                       <a href="https://www.twitter.coom"><i style="width: 25px;height: 25px;color: rgb(30, 42, 53);   "
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+
+                <div style="color: rgb(4, 4, 4);font-size:90%;">
+
+                    We use cookies to ensure you have the best browsing experience on our website. Please read our
+                    cookie policy for more information about how we use cookies
+                </div>
+                <div>
+
+                    Thank You For Visiting Our page.....![@copyright2022www.codersclub.co.org.in(pvt.ltd.INDIA)Visit
+                    Page For Any Queries And Post What You Didn't Find We Try to Fullfill It.....]
+
+                </div>
+            </div>
+
+        </fieldset>
+    </footer>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
